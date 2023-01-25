@@ -6,3 +6,7 @@ lint-yaml:
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3
 
+lint-json:
+  runs-on: ubuntu-latest
+    - name: Run JSON Lint
+      run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/json-lint/master/pipeline.sh)
